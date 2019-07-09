@@ -1,0 +1,12 @@
+<table>
+    <tr>
+    	<th>NAME</th>
+        <th>picture</th>
+    </tr>
+    {% for item in results %}
+    <tr style="color: black;">
+    	<td>{{ item.name }}</td> 
+        <td><img src="media/{{ item.img }}" style="width: 90px;"></img></td>
+    </tr>
+    {% endfor %}
+</table>
